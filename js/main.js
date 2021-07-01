@@ -5,7 +5,7 @@ function funcion(){
     if((numero >=10 ) && (numero <=50 )){
         alert('Tu numero es '+numero);
     }else {
-    //alert('Hay tabla');
+    alert('Hay tabla');
     document.getElementById("img1").src= "assets/img/hay_tabla.jpg";
     }
     console.log(parseInt(numero));
