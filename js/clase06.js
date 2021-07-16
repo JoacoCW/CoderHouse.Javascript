@@ -38,12 +38,28 @@ const invitados = [
 
 function compare( a, b ) {
     if ( a.nombre < b.nombre ){
-      return -1;
+        return -1;
     }
     if ( a.nombre > b.nombre ){
-      return 1;
+        return 1;
     }
     return 0;
-  }
-  
-  console.log(invitados.sort( compare ));
+}
+
+function compararApellidos( a, b ) {
+    if ( a.apellido < b.apellido ){
+        return -1;
+    }
+    if ( a.apellido > b.apellido ){
+        return 1;
+    }
+    return 0;
+}
+
+function ordenarPorNombre(){
+    console.log(invitados.sort( compare ));
+}
+
+function ordenarPorApellido(){
+    console.log(invitados.sort( compararApellidos ));
+}
